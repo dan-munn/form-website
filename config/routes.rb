@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'home'      => 'pages#home'
   
   get 'homeowner' => 'pages#homeowner'
+  
+#  get 'contact_us'=> 'contacts#new'
 
   root 'pages#home'
 
