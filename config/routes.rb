@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
+  mount Rapidfire::Engine => "/rapidfire"
+
   devise_for :users
-  
+
   resources :contacts
 
   get 'about'     => 'pages#about'
@@ -13,5 +15,7 @@ Rails.application.routes.draw do
 #  get 'contact_us'=> 'contacts#new'
 
   root 'pages#home'
+  
+  
 
 end
